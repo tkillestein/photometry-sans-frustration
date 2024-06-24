@@ -517,16 +517,16 @@ def TWOMASScatalog(ra,dec,magmin=25,magmax=8,queryrad=5):
 
 # Try to match header keyword to a known filter automatically:
 
-filtSyn = {'u':['u','SDSS-U','up','up1','U640','F336W','Sloan_u','u_Sloan'],
-           'g':['g','SDSS-G','gp','gp1','g782','F475W','g.00000','Sloan_g','g_Sloan','g DECam SDSS c0001 4720.0 1520.0'],
-           'r':['r','SDSS-R','rp','rp1','r784','F625W','r.00000','Sloan_r','r_Sloan','r DECam SDSS c0002 6415.0 1480.0'],
-           'i':['i','SDSS-I','ip','ip1','i705','F775W','i.00000','Sloan_i','i_Sloan','i DECam SDSS c0003 7835.0 1470.0'],
-           'z':['z','SDSS-Z','zp','zp1','z623','zs', 'F850LP','z.00000','Sloan_z','z_Sloan','z DECam SDSS c0004 9260.0 1520.0'],
+filtSyn = {'u':['u','SDSS-U','up','up1','U640','F336W','Sloan_u','u_Sloan', 'u_SDSS'],
+           'g':['g','SDSS-G','gp','gp1','g782','F475W','g.00000','Sloan_g','g_Sloan','g DECam SDSS c0001 4720.0 1520.0', 'g_SDSS'],
+           'r':['r','SDSS-R','rp','rp1','r784','F625W','r.00000','Sloan_r','r_Sloan','r DECam SDSS c0002 6415.0 1480.0', 'r_SDSS'],
+           'i':['i','SDSS-I','ip','ip1','i705','F775W','i.00000','Sloan_i','i_Sloan','i DECam SDSS c0003 7835.0 1470.0', 'i_SDSS'],
+           'z':['z','SDSS-Z','zp','zp1','z623','zs', 'F850LP','z.00000','Sloan_z','z_Sloan','z DECam SDSS c0004 9260.0 1520.0', 'z_SDSS'],
            'y':['yp1','Y DECam c0005 10095.0 1130.0'],
            'J':['J'],
            'H':['H'],
            'K':['K','Ks'],
-           'U':['U','U_32363A'],
+           'U':['U','U_32363A', 'U_Bes'],
            'B':['B','B_39692','BH'],
            'V':['V','V_36330','VH'],
            'R':['R','R_30508'],
